@@ -1,0 +1,55 @@
+**Ciclo de Vida del Desarrollo de Software (SDLC) para el Sistema de Control de Motor**
+
+## 1. **Planificación**
+El objetivo principal de este proyecto es desarrollar un sistema simple de control de velocidad para un motor, donde el usuario pueda ingresar una velocidad dentro de un rango permitido. El sistema validará la entrada y proporcionará retroalimentación en caso de valores incorrectos. Se espera que este programa sea útil en aplicaciones básicas de control de motores y aprendizaje de validación de datos en Python.
+
+### **Requisitos**
+- El usuario debe ingresar un valor numérico dentro del rango de 0 a 255.
+- El sistema debe validar la entrada y proporcionar mensajes de error si el valor es inválido.
+- La implementación debe ser en Python.
+
+## 2. **Análisis de Requisitos**
+En esta fase, se definen los requerimientos funcionales y no funcionales del software:
+
+### **Requerimientos Funcionales**
+- Mostrar un mensaje de bienvenida al usuario.
+- Solicitar al usuario un valor de velocidad.
+- Verificar si el valor ingresado es un número válido y está en el rango permitido.
+- Repetir la solicitud hasta que el usuario ingrese un valor correcto.
+- Mostrar la velocidad ingresada si es válida.
+
+### **Requerimientos No Funcionales**
+- La aplicación debe ser interactiva y fácil de usar.
+- Debe proporcionar mensajes de error claros en caso de entradas inválidas.
+- Debe ejecutarse en cualquier entorno compatible con Python.
+
+## 3. **Diseño**
+El sistema sigue una estructura de interacción basada en consola, donde:
+
+1. Se imprime un mensaje de bienvenida.
+2. Se solicita al usuario ingresar una velocidad.
+3. Se verifica si la entrada es un número y está dentro del rango permitido (0-255).
+4. Si la entrada es válida, se muestra el valor y el programa continúa; de lo contrario, se muestra un mensaje de error y se solicita nuevamente el valor.
+
+### **Diagrama de Flujo**
+```plaintext
+Inicio
+  |
+  V
+Mostrar mensaje de bienvenida
+  |
+  V
+Solicitar velocidad al usuario
+  |
+  V
+¿Entrada es un número y está en el rango 0-255?
+  |          |
+  | Sí       | No
+  V          V
+Mostrar velocidad    Mostrar error y repetir
+  |
+  V
+ Fin
+```
+Este diseño garantiza que el usuario siempre ingrese una velocidad válida antes de proceder con el control del motor.
+
